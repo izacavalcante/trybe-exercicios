@@ -1,0 +1,30 @@
+const a = 5;
+const b = 8;
+const c = 2;
+
+console.log(a + b);
+console.log(a - b);
+console.log(a * b);
+console.log(a / b);
+console.log(a % b);
+
+if (a > b) {
+    console.log(5)
+}
+else {
+    console.log(8)
+}
+
+
+if (a > b || c) {
+    console.log(5);
+}
+else if (b > a || c) {
+    console.log(8);
+}
+else if (c > a || b) {
+    console.log(2);
+}
+else {
+    console.log("Todos tem o mesmo valor")
+}
