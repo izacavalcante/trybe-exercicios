@@ -93,6 +93,18 @@
 
     let tagH3e3 = document.createElement('h3');
     tagMain.appendChild(tagH3e3);
+
+    document.querySelector('h1').className = "title";
+
+    document.querySelectorAll('h3')[0].className = "description";
+    document.querySelectorAll('h3')[1].className = "description";
+    document.querySelectorAll('h3')[2].className = "description";
+
+    tagMain.removeChild(tagSection2);
+
+    document.querySelector('#right-content').style.marginRight = "auto";
+
+    document.querySelector('#center-content').style.backgroundColor = "green";
     </script>
   </body>
 </html>
