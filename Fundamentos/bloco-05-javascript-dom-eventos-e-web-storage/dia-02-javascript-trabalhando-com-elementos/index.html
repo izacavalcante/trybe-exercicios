@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+    let tagBody = document.body; //Buscar elemento pai
+    let tagH1 = document.createElement('h1'); //Criar elemento
+    let textH1 = document.createTextNode('Exercício 5.2 - JavaScript DOM'); //Criar o nó de texto
+    tagH1.appendChild(textH1); //Anexar o nó de texto ao elemento h1
+    tagBody.appendChild(tagH1); //Inserir o elemento filho(titulo) ao elemento pai(body)
+
+    let tagMain = document.createElement('main');
+    tagBody.appendChild(tagMain);
+    tagMain.className = "main-content";
+
+    let tagSection = document.createElement('section');
+    tagMain.appendChild(tagSection);
+    tagSection.className = "center-content";
+
+    let tagP = document.createElement('p');
+    tagSection.appendChild(tagP);
+
+    let tagSection2 = document.createElement('section');
+    tagMain.appendChild(tagSection2);
+    tagSection2.className = "left-content";
+
+    let tagSection3 = document.createElement('section');
+    tagMain.appendChild(tagSection3);
+    tagSection3.className = "right-content";
+
+    let lista = 'um, dois, três, quatro, cinco, seis, sete, oito, nove, dez';
+    tagSection3.innerText = lista;
+
+    let tagH3e1 = document.createElement('h3');
+    tagMain.appendChild(tagH3e1);
+
+    let tagH3e2 = document.createElement('h3');
+    tagMain.appendChild(tagH3e2);
+
+    let tagH3e3 = document.createElement('h3');
+    tagMain.appendChild(tagH3e3);
+
+    document.querySelector('h1').className = "title";
+
+    document.querySelectorAll('h3')[0].className = "description";
+    document.querySelectorAll('h3')[1].className = "description";
+    document.querySelectorAll('h3')[2].className = "description";
+
+    tagMain.removeChild(tagSection2);
+
+    document.querySelector('#right-content').style.marginRight = "auto";
+
+    document.querySelector('#center-content').style.backgroundColor = "green";
+    </script>
+  </body>
+</html>
