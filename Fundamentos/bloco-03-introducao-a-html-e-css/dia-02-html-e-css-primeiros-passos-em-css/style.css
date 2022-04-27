@@ -1,0 +1,37 @@
+body {
+    font-size: 16px;
+}
+
+h1 {
+    color: orange;
+    font-family: sans-serif;
+    font-size: 65px;
+}
+
+ul {
+    background-color: rgb(100, 200, 300);
+    font-size: 30px;
+}
+
+.arco-iris {
+    background-color: palevioletred;
+}
+
+p {
+    font-weight: 600;
+    font-size: 48px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+#amarelo {
+    background-color: yellow;
+}
+
+#vermelho {
+    background-color: red;
+}
+
+#marrom {
+    background-color: brown;
+}
