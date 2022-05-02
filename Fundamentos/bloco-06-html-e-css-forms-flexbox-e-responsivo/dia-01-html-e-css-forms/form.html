@@ -12,15 +12,15 @@
         <h1>Formulário para a TrybeTrip</h1>
     </header>
     <main>
-        <form>
+        <form action="" method="get" enctype="multipart/form-data">
             <fieldset>
                 <br>
                 <label for="nome">Nome Completo:
-                    <input type="text" id="nome" autocomplete="off" required autofocus>
+                    <input type="text" id="nome" data-ls-module="charCounter" maxlength="40" autocomplete="off" required autofocus>
                 </label>
                 <br><br>
                 <label for="email">Email:
-                    <input type="text" id="email" required>
+                    <input type="text" id="email" data-ls-module="charCounter" maxlength="40" required>
                 </label>
                 <br><br>
                 <p>Destino Preferido:</p>
@@ -39,16 +39,16 @@
                 <br><br>
                 <p>Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?
                 </p>
-                <textarea name="texto" id="texto" cols="50" rows="10"></textarea>
+                <textarea name="texto" id="texto" data-ls-module="charCounter" maxlength="500" cols="50" rows="10"></textarea>
                 <br><br>
                 <label for="data">Qual a melhor data para realizar sua viagem?
                 <input type="date" id="data"/>
                 </label>
                 <br><br><br>
                 <label for="checks">
-                    <input type="checkbox" class="checks" value="check-1"/>Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?
+                    <input type="checkbox" id="check-1" class="checks" value="check-1"/>Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?
                     <br>
-                    <input type="checkbox" class="checks" value="check-2"/>Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.
+                    <input type="checkbox" id="check-2" class="checks" value="check-2"/>Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.
                 </label>
                 <br><br>
             </fieldset>
