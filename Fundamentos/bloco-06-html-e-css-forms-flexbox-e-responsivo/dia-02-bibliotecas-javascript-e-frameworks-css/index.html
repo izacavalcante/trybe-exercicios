@@ -11,54 +11,64 @@
 </head>
 <body>
     <header>
-        <h1>Formulário para a TrybeTrip</h1>
+        <h1 class="display-4 text-muted">Formulário TrybeTrip</h1>
     </header>
     <main>
         <form action="" method="get" enctype="multipart/form-data">
             <fieldset>
                 <br>
-                <label for="nome">Nome Completo:
-                    <input type="text" id="nome" data-ls-module="charCounter" maxlength="40" autocomplete="off" required autofocus>
-                </label>
+                <div class="form-group">
+                    <label for="nome">Nome Completo:
+                        <input class="form-control" type="text" id="nome" data-ls-module="charCounter" maxlength="40" autocomplete="off" required autofocus>
+                    </label>
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="email">Email:
+                        <input class="form-control" type="text" id="email" data-ls-module="charCounter" maxlength="40" required>
+                    </label>
+                </div>
                 <br><br>
-                <label for="email">Email:
-                    <input type="text" id="email" data-ls-module="charCounter" maxlength="40" required>
-                </label>
+                <div class="form-group">
+                    <p class="form-control">Destino Preferido:</p>
+                    <label for="destino-1">
+                        <input type="radio" id="destino-1" name="destino" value="cidade" checked>Cidade
+                    </label>
+                    <label for="destino-2">
+                        <input type="radio" id="destino-2" name="destino" value="campo">Campo
+                    </label>
+                    <label for="destino-3">
+                        <input type="radio" id="destino-3" name="destino" value="praia">Praia
+                    </label>
+                    <label for="destino-4">
+                        <input type="radio" id="destino-4" name="destino" value="montanhas">Montanhas
+                    </label>
+                </div>
                 <br><br>
-                <p>Destino Preferido:</p>
-                <label for="destino-1">
-                    <input type="radio" id="destino-1" name="destino" value="cidade" checked>Cidade
-                </label>
-                <label for="destino-2">
-                    <input type="radio" id="destino-2" name="destino" value="campo">Campo
-                </label>
-                <label for="destino-3">
-                    <input type="radio" id="destino-3" name="destino" value="praia">Praia
-                </label>
-                <label for="destino-4">
-                    <input type="radio" id="destino-4" name="destino" value="montanhas">Montanhas
-                </label>
+                <div>
+                    <p>Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</p>
+                    <textarea name="texto" id="texto" class="form-control" data-ls-module="charCounter" maxlength="500" cols="50" rows="10"></textarea>
+                </div>
                 <br><br>
-                <p>Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?
-                </p>
-                <textarea name="texto" id="texto" data-ls-module="charCounter" maxlength="500" cols="50" rows="10"></textarea>
+                <div class="form-group">
+                    <label for="data">Qual a melhor data para realizar sua viagem?
+                        <input class="form-control" type="date" id="data"/>
+                    </label>
+                </div>
                 <br><br>
-                <label for="data">Qual a melhor data para realizar sua viagem?
-                <input type="date" id="data"/>
-                </label>
-                <br><br><br>
-                <label for="checks">
-                    <input type="checkbox" id="check-1" class="checks" value="check-1"/>Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?
-                    <br>
-                    <input type="checkbox" id="check-2" class="checks" value="check-2"/>Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.
-                </label>
+                <div class="form-group">
+                    <label for="checks">
+                        <input type="checkbox" id="check-1" class="checks" value="check-1"/>Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?
+                        <br>
+                        <input type="checkbox" id="check-2" class="checks" value="check-2"/>Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.
+                    </label>
+                </div>
                 <br><br>
             </fieldset>
             <br>
-            <button type="submit" name="enviar" id="enviar" class="buttons">Enviar</button>
-            <button type="reset" name="reset" id="reset" class="buttons">Apagar</button>
+            <button type="submit" name="enviar" id="enviar" class="">Enviar</button>
+            <button type="reset" name="reset" id="reset" class="">Apagar</button>
         </form>
     </main>
-    <script src="script.js"></script>
 </body>
 </html>
