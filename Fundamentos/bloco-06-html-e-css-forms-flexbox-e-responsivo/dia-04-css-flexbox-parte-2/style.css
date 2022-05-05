@@ -19,11 +19,13 @@
     display: flex;
     justify-content: center;
     flex-grow: 268;
+    order: 1;
   }
   
   .menu-container {
     display: flex;
     flex-grow: 268;
+    order: 2;
   }
   
   .menu-container ul {
