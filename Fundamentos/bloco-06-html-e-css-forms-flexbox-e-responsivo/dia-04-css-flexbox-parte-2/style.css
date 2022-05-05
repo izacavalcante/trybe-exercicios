@@ -13,12 +13,12 @@
     background-color: #5C687C;
     display: flex;  
     flex-basis: 500;
+    justify-content: space-between;
   }
   
   .logo-container {
     display: flex;
     justify-content: center;
-    flex-grow: 268;
     order: 1;
   }
   
