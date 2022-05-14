@@ -1,0 +1,20 @@
+const coletandoDados = (nome) => {
+    let email = (`${nome.replace(' ', '.').toLowerCase()}@trybe.com`);
+
+    let dadosPessoa = {
+        nomeCompleto: nome,
+        email: email
+    }
+    return dadosPessoa;
+}
+
+const newEmployees = () => {
+    const employees = {
+      id1: coletandoDados('Pedro Guerra'), 
+      id2: coletandoDados('Luiza Drumond'), 
+      id3: coletandoDados('Carala Paiva'), 
+    }
+    return employees;
+  };
+
+  console.log(newEmployees())
