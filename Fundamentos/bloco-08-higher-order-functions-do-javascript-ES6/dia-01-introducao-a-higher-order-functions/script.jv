@@ -1,0 +1,39 @@
+// Questão 1
+const coletandoDados = (nome) => {
+    let email = (`${nome.replace(' ', '.').toLowerCase()}@trybe.com`);
+
+    let dadosPessoa = {
+        nomeCompleto: nome,
+        email: email
+    }
+    return dadosPessoa;
+}
+
+const newEmployees = () => {
+    const employees = {
+      id1: coletandoDados('Pedro Guerra'), 
+      id2: coletandoDados('Luiza Drumond'), 
+      id3: coletandoDados('Carala Paiva'), 
+    }
+    return employees;
+  };
+
+  console.log(newEmployees());
+
+
+  // Questão 2
+  const numeroSorteado = () => {
+    const max = 5;
+    return Math.floor(Math.random() * max + 1)
+  };
+
+  console.log(numeroSorteado());
+
+  const resultadoDoSorteio = (numeroApostado) => {
+    if (numeroApostado !== numeroSorteado) {
+      return 'Tente novamente';
+    } 
+    return 'Parabéns você ganhou!';
+  };
+
+  console.log(resultadoDoSorteio(4));
