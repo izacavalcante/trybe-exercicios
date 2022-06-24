@@ -5,11 +5,11 @@ class Pokemons extends React.Component {
     render () {
         const { name, type, value, img } = this.props;
         return (
-            <div>
-                <p>{ name }</p>
+            <div className="pokeBox">
+                <p className="name">{ name }</p>
                 <p>{ type }</p>
                 <p>Average weight: { value } kg</p>
-                <img src={ img } alt={ name } />
+                <img src={ img } alt={ name } className="pokeImg"/>
             </div>
         );
     }
