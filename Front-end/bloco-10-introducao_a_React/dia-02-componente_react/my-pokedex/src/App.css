@@ -1,0 +1,49 @@
+/*CSS COM ZOOM EM 90%*/
+
+body {
+  background-image: url('../src/imagens/campoVerde.png');
+}
+
+.title {
+  text-align: center;
+  font-size: 70px;
+}
+
+.pokemons{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.pokeBox {
+  background-color: aliceblue;
+  font-size: 25px;
+  border: 3px solid black;
+  border-radius: 20px;
+  margin: 30px;
+  height: 270px;
+  width: 560px;
+}
+
+.pokeBox:hover {
+  background-color: rgb(242, 166, 26);
+  transition: 0.5s;
+  opacity: 0.7;
+}
+
+.name {
+  font-weight: bold;
+  line-height: 25px;
+  margin-left: 40px;
+}
+
+p {
+  line-height: 10px;
+  margin-left: 40px;
+}
+
+.pokeImg {
+  margin-left: 360px;
+  height:140px;
+  width: 140px;
+}
