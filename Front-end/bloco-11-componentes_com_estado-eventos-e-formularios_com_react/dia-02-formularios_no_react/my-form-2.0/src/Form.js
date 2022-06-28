@@ -16,9 +16,9 @@ class Form extends React.Component {
             cidade: "",
             estado: "",
             moradia: "",
-        //     curriculo: "",
-        //     cargo: "",
-        //     descriçãoCargo: "",
+            curriculo: "",
+            cargo: "",
+            descriçãoCargo: "",
         }
     }
 
@@ -58,6 +58,7 @@ class Form extends React.Component {
                         <br /><br />
                         <p>Estado:</p>
                         <select name="estado" value={this.state.estado} onChange={this.formulario} required>
+                            <option>ESCOLHA UM ESTADO</option>
                             <option>Acre</option>
                             <option>Alagoas</option>
                             <option>Amapá</option>
@@ -87,25 +88,27 @@ class Form extends React.Component {
                             <option>Tocantins</option>
                         </select>
                         <br /><br />
-                        <label name="moradia" value={this.state.moradia} onChange={this.formulario}>
+                        <div className="radio">
                             <label htmlFor="radio_1">
-                                <input type="radio" name="moradia" id="radio_1" />CASA
+                                <input type="radio" name="moradia" id="radio_1" value="casa" checked={this.state.name} onChange={this.formulario} />CASA
                             </label>
+                        </div>
+                        <div className="radio">
                             <label htmlFor="radio_2">
-                                <input type="radio" name="moradia" id="radio_2" />APARTAMENTO
+                                <input type="radio" name="moradia" id="radio_2" value="apartamento" checked={this.state.name} onChange={this.formulario} />APARTAMENTO
                             </label>
-                        </label>
+                        </div>
                     </fieldset>
-                    {/* <fieldset>
+                    <fieldset>
                         <p>Resumo do currículo</p>
-                        <textarea name="curriculo" data-ls-module="charCounter" maxLength="1000" required />
+                        <textarea name="curriculo" data-ls-module="charCounter" maxLength="1000" value={this.state.curriculo} onChange={this.formulario} required />
                         <br /><br />
                         <p>Cargo</p>
-                        <textarea name="cargo" data-ls-module="charCounter" maxLength="40" onMouseEnter="Preencha com cuidado esta informação." required/>
+                        <textarea name="cargo" data-ls-module="charCounter" maxLength="40" onMouseEnter="Preencha com cuidado esta informação." value={this.state.cargo} onChange={this.formulario} required/>
                         <br /><br />
                         <p>Descrição do cargo</p>
-                        <textarea name="descriçãoCargo" data-ls-module="charCounter" maxLength="40"  required/>
-                    </fieldset>*/}
+                        <textarea name="descriçãoCargo" data-ls-module="charCounter" maxLength="40" value={this.state.descriçãoCargo} onChange={this.formulario} required/>
+                    </fieldset>
                 </form>
                 {/* <Button /> */}
             </div>
